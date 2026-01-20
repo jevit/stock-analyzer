@@ -1,0 +1,189 @@
+# ========================================
+# FICHIER DE RÉFÉRENCE - NE PAS UTILISER POUR LE CHARGEMENT
+# Fichier de référence pour identifier les entreprises
+# Le fichier actif est: tickers.txt (sans commentaires)
+# ========================================
+
+# ========================================
+# FRANCE - CAC 40 & Grandes caps
+# ========================================
+
+# Luxe
+MC.PA       # LVMH
+OR.PA       # L'Oréal
+RMS.PA      # Hermès
+KER.PA      # Kering
+
+# Energie & Utilities
+TTE.PA      # TotalEnergies
+ENGI.PA     # Engie
+
+# Banques & Assurances
+BNP.PA      # BNP Paribas
+ACA.PA      # Crédit Agricole
+GLE.PA      # Société Générale
+CS.PA       # AXA
+COFA.PA     # Coface
+
+# Industrie & Construction
+AIR.PA      # Airbus
+SU.PA       # Schneider Electric
+DG.PA       # Vinci
+VIE.PA      # Veolia
+
+# Defense & Aérospatiale
+SAF.PA      # Safran
+HO.PA       # Thales
+
+# Santé & Pharma
+SAN.PA      # Sanofi
+
+# Télécoms & Médias
+ORA.PA      # Orange
+PUB.PA      # Publicis
+TFI.PA      # TF1
+
+# Tech & Services
+CAP.PA      # Capgemini
+DSY.PA      # Dassault Systèmes
+ATO.PA      # Atos
+TE.PA       # Technip Energies
+
+# Autres secteurs
+RI.PA       # Pernod Ricard
+AI.PA       # Air Liquide
+SGO.PA      # Saint-Gobain
+SCR.PA      # Scor
+SPIE.PA     # SPIE
+RXL.PA      # Rexel
+RUI.PA      # Rubis
+NK.PA       # Imerys
+VK.PA       # Vallourec
+FDJ.PA      # La Française des Jeux
+GTT.PA      # Gaztransport & Technigaz
+CDA.PA      # Compagnie des Alpes
+
+# ========================================
+# FRANCE - Small & Mid Caps
+# ========================================
+
+# Tech / Innovation
+AL2SI.PA    # 2CRSi
+ALORA.PA    # Alora
+ALTUV.PA    # Altur
+ALBPS.PA    # Biopass
+ALCLS.PA    # Clasquin
+ALDRV.PA    # Driver
+EXA.PA      # Exa
+EXENS.PA    # Exensys
+GNFT.PA     # Genfit
+IVA.PA      # Iva
+ALODY.PA    # Odyssey
+ALPWG.PA    # Powergy
+ALRIB.PA    # Ribbon
+ALSEM.PA    # Semtech
+VMX.PA      # Vermix
+
+# Autres
+ABCA.PA     # ABC Arbitrage
+BLC.PA      # BLC
+ALCPB.PA    # CPB
+CBOT.PA     # Cbot
+KOF.PA      # Koffi
+FII.PA      # FII
+MRN.PA      # MRN
+VAC.PA      # VAC
+
+# ETF France
+AMUN.PA     # Amundi
+C8D.PA      # Amundi Stoxx Europe Select Dividend
+
+# ========================================
+# EUROPE (hors France)
+# ========================================
+
+# Allemagne
+SIE.DE      # Siemens
+DTE.DE      # Deutsche Telekom
+
+# Italie
+ISP.MI      # Intesa Sanpaolo
+
+# Espagne
+IBE.MC      # Iberdrola
+
+# Suisse
+NESN.SW     # Nestlé
+
+# UK
+BA.L        # BAE Systems
+
+# ETF Europe
+SDDV.DE     # iShares STOXX Global Select Dividend 100
+ZPRG.DE     # SPDR S&P Global Dividend Aristocrats
+
+# ========================================
+# CANADA
+# ========================================
+
+NXE.TO      # NexGen Energy
+ABX.TO      # Barrick Gold
+CNQ.TO      # Canadian Natural Resources
+ENB.TO      # Enbridge
+
+# ========================================
+# USA - Tech & Innovation
+# ========================================
+
+# Quantum Computing
+IONQ        # IonQ
+RGTI        # Rigetti Computing
+
+# Space & Aerospace
+LUNR        # Intuitive Machines
+RKLB        # Rocket Lab
+PL          # Planet Labs
+
+# FAANG & Mega Caps
+MSFT        # Microsoft
+NVDA        # NVIDIA
+GOOGL       # Alphabet Class A
+AMZN        # Amazon
+
+# Semiconducteurs
+MRVL        # Marvell Technology
+
+# ========================================
+# USA - Autres secteurs
+# ========================================
+
+# Energie
+XOM         # Exxon Mobil
+
+# Retail
+WMT         # Walmart
+
+# REITs & Dividendes
+O           # Realty Income
+
+# Télécoms
+VZ          # Verizon
+
+# Pharma & Biotech
+MRK         # Merck
+RLAY        # Relay Therapeutics
+PALI        # Palisade Bio
+
+# Financier (ADR)
+HDB         # HDFC Bank ADR
+ITUB        # Itau Unibanco ADR
+
+# ========================================
+# Non disponibles / Délistés
+# ========================================
+# NAVYA.PA - Délisté
+# APAM.PA - Délisté
+# STM.PA - Problèmes de données
+# DEINOVE
+# ENERTIME
+# METABOLIC EXPLORER

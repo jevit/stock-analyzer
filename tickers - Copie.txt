@@ -1,0 +1,190 @@
+# Stock Analyzer - Watchlist
+# Actions liquides pour analyse technique
+
+# ═══════════════════════════════════════
+# TECH US - Mega Caps (très liquides)
+# ═══════════════════════════════════════
+AAPL
+MSFT
+GOOGL
+AMZN
+NVDA
+META
+TSLA
+AVGO
+ORCL
+CRM
+AMD
+ADBE
+INTC
+CSCO
+NFLX
+
+# ═══════════════════════════════════════
+# FINANCE US
+# ═══════════════════════════════════════
+JPM
+BAC
+GS
+MS
+WFC
+V
+MA
+AXP
+BLK
+C
+
+# ═══════════════════════════════════════
+# SANTE / PHARMA
+# ═══════════════════════════════════════
+JNJ
+UNH
+PFE
+ABBV
+MRK
+LLY
+TMO
+ABT
+BMY
+AMGN
+
+# ═══════════════════════════════════════
+# INDUSTRIE / DEFENSE
+# ═══════════════════════════════════════
+CAT
+BA
+GE
+HON
+RTX
+LMT
+DE
+UPS
+MMM
+
+# ═══════════════════════════════════════
+# CONSOMMATION
+# ═══════════════════════════════════════
+WMT
+HD
+MCD
+NKE
+SBUX
+COST
+TGT
+LOW
+PG
+KO
+PEP
+
+# ═══════════════════════════════════════
+# ENERGIE
+# ═══════════════════════════════════════
+XOM
+CVX
+COP
+SLB
+EOG
+
+# ═══════════════════════════════════════
+# TECH GROWTH / MOMENTUM
+# ═══════════════════════════════════════
+PLTR
+SNOW
+CRWD
+PANW
+DDOG
+NET
+ZS
+SHOP
+SQ
+COIN
+MSTR
+ARM
+SMCI
+
+# ═══════════════════════════════════════
+# INFORMATIQUE QUANTIQUE
+# ═══════════════════════════════════════
+IONQ
+RGTI
+QBTS
+QUBT
+ARQQ
+QTUM
+
+# Pure players quantique:
+# IONQ - Leader trapped ion quantum
+# RGTI - Rigetti Computing (superconducting)
+# QBTS - D-Wave Quantum (annealing)
+# QUBT - Quantum Computing Inc
+# ARQQ - Arqit Quantum (encryption)
+# QTUM - ETF Quantum Computing
+
+# Exposure quantique via Big Tech:
+# IBM, GOOGL, MSFT, AMZN (déjà dans la liste)
+
+# ═══════════════════════════════════════
+# ACTIONS FRANÇAISES (Euronext Paris)
+# ═══════════════════════════════════════
+# CAC 40 - Grandes caps
+MC.PA
+OR.PA
+RMS.PA
+TTE.PA
+SAN.PA
+AIR.PA
+SU.PA
+AI.PA
+BNP.PA
+ACA.PA
+CS.PA
+SAF.PA
+DG.PA
+RI.PA
+KER.PA
+CAP.PA
+STM.PA
+DSY.PA
+ATO.PA
+SGO.PA
+
+# Luxe
+MC.PA
+RMS.PA
+KER.PA
+
+# Tech / Semiconducteurs
+STM.PA
+CAP.PA
+DSY.PA
+ATO.PA
+
+# Energie
+TTE.PA
+ENGI.PA
+
+# Banques
+BNP.PA
+ACA.PA
+GLE.PA
+
+# Defense / Aero
+SAF.PA
+AIR.PA
+HO.PA
+
+# ═══════════════════════════════════════
+# ETF MAJEURS (pour contexte marché)
+# ═══════════════════════════════════════
+SPY
+QQQ
+IWM
+DIA
+XLF
+XLE
+XLK
+XLV
+
+# ETF Europe
+EWQ
+FEZ
