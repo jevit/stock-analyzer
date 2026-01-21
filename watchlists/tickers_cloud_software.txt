@@ -1,0 +1,22 @@
+# Cloud & Software IA
+
+## Cloud Giants
+MSFT
+GOOGL
+AMZN
+META
+
+## SaaS avec IA
+CRM
+NOW
+PLTR
+
+## Data & Analytics
+SNOW
+DDOG
+
+## Cybersecurity Cloud
+CRWD
+ZS
+PANW
+NET

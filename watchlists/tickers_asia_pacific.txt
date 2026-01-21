@@ -1,0 +1,24 @@
+# Asie-Pacifique - Tech & Consommation
+
+## Japon
+9984.T
+6758.T
+8035.T
+
+## Corée du Sud
+005930.KS
+
+## Semi-conducteurs Asie
+TSM
+2330.TW
+ASML.AS
+
+## Chine (risque géopolitique)
+BABA
+TCEHY
+0700.HK
+
+## Asie du Sud-Est
+SE
+GRAB
+BEKE

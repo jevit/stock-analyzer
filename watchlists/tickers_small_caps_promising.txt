@@ -1,0 +1,202 @@
+# Small & Mid Caps Prometteuses - Petites Valorisations (<10B USD)
+
+## Quantum Computing (Très petites caps, haut risque/rendement)
+IONQ
+RGTI
+QUBT
+ARQQ
+
+## IA & Semi-conducteurs Émergents
+SMCI
+ARM
+ANET
+MU
+ONTO
+MPWR
+WOLF
+CRUS
+ALGM
+MCHP
+
+## Uranium & Nucléaire (Small/Mid caps)
+UEC
+NXE
+DNN
+UUUU
+EU
+BKRRF
+PALAF
+URNM
+CCO.TO
+DML.TO
+
+## Biotech Prometteuses (Thérapies innovantes)
+CRSP
+EDIT
+NTLA
+BEAM
+VRTX
+IONS
+RARE
+BLUE
+ARWR
+FATE
+RLAY
+PALI
+VERV
+ALLO
+
+## Cleantech & Batteries
+QS
+CHPT
+BLNK
+EVGO
+ALB
+LAC
+LTHM
+MP
+ASTS
+
+## Space Tech & Satellites
+RKLB
+LUNR
+ASTS
+PL
+IRDM
+SPIR
+
+## Cybersécurité Émergentes
+S
+CYBR
+TENB
+CHKP
+VRNS
+RPD
+
+## Fintech & Crypto Infrastructure
+SQ
+PYPL
+COIN
+MARA
+RIOT
+HIVE
+CLSK
+
+## Cloud & SaaS Émergentes
+SNOW
+DDOG
+NET
+MDB
+GTLB
+FRSH
+ZI
+BILL
+DOCN
+
+## Robotique & Automation
+PATH
+SSYS
+DM
+NNDM
+MARKF
+
+## Defence Tech Émergentes
+KTOS
+AVAV
+IRDM
+
+## Lithium & Matériaux Critiques
+LTHM
+LAC
+LILM
+SQM
+ALB
+MP
+NOVRF
+
+## Infrastructure IA Émergente
+CORZ
+WULF
+IREN
+CIFR
+BTBT
+
+## Medtech & Healthtech
+TDOC
+TMDX
+GDRX
+DOCS
+VEEV
+DXCM
+
+## Energie Renouvelable Small Caps
+RUN
+NOVA
+CSIQ
+MAXN
+ARRY
+
+## Semi-conducteurs Spécialisés
+ALGM
+MPWR
+WOLF
+CRUS
+DIOD
+SLAB
+POWI
+
+## Biotech Oncologie
+SAVA
+IMMP
+FATE
+BEAM
+BLUE
+
+## Mining Juniors Prometteurs (Terres Rares, Lithium)
+UURAF
+REMX
+NOVRF
+PILBF
+UROY.L
+
+## EdTech & Digital Services
+CHGG
+DUOL
+TWOU
+STRA
+
+## Autonomous Vehicles & Lidar
+LAZR
+OUST
+INVZ
+AUR
+
+## Agriculture Tech
+APPH
+AMPS
+BYND
+
+## 3D Printing & Advanced Manufacturing
+DM
+SSYS
+NNDM
+XONE
+
+## Aerospace Émergents
+ACHR
+JOBY
+BLDE
+EVTL
+
+## Infrastructure Renouvelable
+NEP
+CWEN
+BEP
+AY
+
+## Genomics & Precision Medicine
+PACB
+ILMN
+NSTG
+TWST
+VCYT

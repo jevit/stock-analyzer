@@ -1,0 +1,18 @@
+# Inde - Croissance Démographique & Économique
+
+## Conglomérats
+RELIANCE.NS
+
+## IT Services
+TCS.NS
+INFY
+WIT
+
+## Banques
+HDFCBANK.NS
+ICICIBANK.NS
+HDB
+IBN
+
+## Télécoms
+BHARTIARTL.NS

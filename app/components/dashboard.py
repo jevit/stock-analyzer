@@ -163,6 +163,10 @@ def render_dashboard(
     """
     st.title("📊 Stock Analyzer - Tableau de bord")
 
+    # Show current watchlist if available
+    if "current_watchlist" in st.session_state and st.session_state["current_watchlist"]:
+        st.info(f"📂 Watchlist active: **{st.session_state['current_watchlist']}**")
+
     # Render disclaimer (collapsed)
     with st.expander("⚠️ Avertissement Important", expanded=False):
         render_risk_disclaimer()

@@ -80,3 +80,51 @@ def format_number(value: float, decimals: int = 2) -> str:
 def format_percentage(value: float, decimals: int = 2) -> str:
     """Format a value as percentage."""
     return f"{value:.{decimals}f}%"
+
+
+def get_available_watchlists() -> dict:
+    """
+    Get all available watchlist files.
+
+    Returns:
+        Dictionary mapping display names to file paths
+    """
+    from config.settings import get_settings
+
+    settings = get_settings()
+    watchlists = {}
+
+    # Main watchlist
+    if settings.tickers_file.exists():
+        watchlists["📋 Watchlist Complète (principale)"] = settings.tickers_file
+
+    # Themed watchlists
+    watchlists_dir = settings.base_dir / "watchlists"
+    if watchlists_dir.exists():
+        # Define order and display names
+        themed_lists = {
+            "tickers_ai_infrastructure.txt": "🤖 IA & Infrastructure",
+            "tickers_cloud_software.txt": "☁️ Cloud & SaaS IA",
+            "tickers_quantum.txt": "⚛️ Quantum Computing",
+            "tickers_energy_ai.txt": "⚡ Énergie pour IA (Uranium, Nucléaire)",
+            "tickers_cybersecurity.txt": "🛡️ Cybersécurité",
+            "tickers_defense.txt": "🚀 Défense & Aérospatial",
+            "tickers_biotech.txt": "🧬 Biotechnologie (GLP-1, CRISPR)",
+            "tickers_india.txt": "🇮🇳 Inde - Croissance",
+            "tickers_asia_pacific.txt": "🌏 Asie-Pacifique",
+            "tickers_europe_resilient.txt": "🇪🇺 Europe Résiliente",
+            "tickers_dividend_aristocrats.txt": "💰 Dividend Aristocrats",
+            "tickers_fintech.txt": "💳 Fintech & Paiements",
+            "tickers_materials.txt": "⛏️ Matières Premières Critiques",
+            "tickers_infrastructure.txt": "🏗️ Infrastructure & Construction",
+            "tickers_automation.txt": "🤖 Automatisation & Robotique",
+            "tickers_renewables.txt": "🌱 Énergies Renouvelables",
+            "tickers_small_caps_promising.txt": "💎 Small Caps Prometteuses",
+        }
+
+        for filename, display_name in themed_lists.items():
+            filepath = watchlists_dir / filename
+            if filepath.exists():
+                watchlists[display_name] = filepath
+
+    return watchlists

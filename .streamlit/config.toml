@@ -1,0 +1,41 @@
+# Streamlit Configuration for Stock Analyzer
+# This file is used for deployment on Streamlit Cloud
+
+[theme]
+# Custom theme colors
+primaryColor = "#1f77b4"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1e1e1e"
+textColor = "#fafafa"
+font = "sans serif"
+
+[server]
+# Server settings
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+# File watcher settings (disable for cloud)
+runOnSave = false
+fileWatcherType = "none"
+
+[browser]
+# Browser settings
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
+
+[runner]
+# Script runner settings
+magicEnabled = true
+fastReruns = true
+
+[client]
+# Client settings
+showErrorDetails = true
+toolbarMode = "minimal"
+
+[logger]
+# Logging level
+level = "info"

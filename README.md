@@ -101,6 +101,22 @@ Utilisez le Planificateur de tâches Windows:
 5. Programme: `C:\chemin\vers\venv\Scripts\python.exe`
 6. Arguments: `C:\chemin\vers\stock-analyzer\run_alerts.py`
 
+## 🚀 Déploiement
+
+Vous voulez mettre votre app en ligne gratuitement ?
+
+👉 **[Consultez le guide complet de déploiement](DEPLOIEMENT.md)**
+
+**Déploiement rapide sur Streamlit Cloud** :
+1. Poussez votre code sur GitHub
+2. Allez sur [share.streamlit.io](https://share.streamlit.io)
+3. Connectez votre repo et cliquez sur "Deploy"
+4. Votre app est en ligne ! 🎉
+
+Plus de détails : voir [DEPLOIEMENT.md](DEPLOIEMENT.md)
+
+---
+
 ## Configuration Telegram
 
 ### Créer un bot Telegram

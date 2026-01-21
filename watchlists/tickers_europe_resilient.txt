@@ -1,0 +1,58 @@
+# Actions Européennes Résilientes - Contexte Tensions USA/Europe
+
+## Énergie & Infrastructures
+TTE.PA
+ENGI.PA
+EDF.PA
+ENEL.MI
+IBE.MC
+ELE.MC
+REE.MC
+RWE.DE
+EOAN.DE
+NEOEN.PA
+
+## Luxe Européen
+MC.PA
+OR.PA
+RMS.PA
+KER.PA
+MONC.MI
+
+## Pharmacie & Santé
+NOVO-B.CO
+NVO
+GSK.L
+AZN.L
+SAN.PA
+SNY.PA
+BAYN.DE
+FME.DE
+
+## Consommation Défensive
+VIE.PA
+DG.PA
+ORA.PA
+NESN.SW
+ULVR.L
+DGE.L
+UNA.AS
+DANOY
+
+## Banques Européennes
+BNP.PA
+ACA.PA
+GLE.PA
+CS.PA
+SAN.MC
+BBVA.MC
+CRDI.MI
+ISP.MI
+DBK.DE
+
+## Infrastructures
+FGR.PA
+VINCI.PA
+ADP.PA
+AENA.MC
+FER.MC

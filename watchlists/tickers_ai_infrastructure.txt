@@ -1,0 +1,33 @@
+# IA & Infrastructure AI - Datacenters, Puces, Cloud Computing
+
+## Fabricants de Puces IA
+NVDA
+AMD
+AVGO
+MRVL
+QCOM
+ARM
+
+## Fabrication Semi-conducteurs
+TSM
+ASML.AS
+
+## Serveurs & Hardware
+SMCI
+DELL
+HPE
+
+## Networking pour IA
+ANET
+
+## Mémoire & Stockage
+MU
+
+## Equipment Semi-conducteurs
+KLAC
+LRCX
+AMAT
+
+## Design & EDA Tools
+CDNS
+SNPS

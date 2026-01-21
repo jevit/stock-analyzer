@@ -15,7 +15,7 @@ import pandas as pd
 from typing import Dict, List
 
 from config.settings import get_settings
-from src.utils.helpers import load_tickers, setup_logging
+from src.utils.helpers import load_tickers, setup_logging, get_available_watchlists
 from src.data.downloader import download_all_tickers, preload_ticker_info
 from src.data.cache import CacheManager
 from src.indicators.technical import calculate_indicators
@@ -129,20 +129,52 @@ def render_sidebar():
     # Data loading section
     st.sidebar.header("📁 Données")
 
-    # Tickers file
-    tickers_file = st.sidebar.text_input(
-        "Fichier tickers",
-        value=str(settings.tickers_file),
-        help="📄 Chemin vers un fichier contenant la liste des tickers à analyser (un ticker par ligne). Ex: tickers.txt"
-    )
+    # Get available watchlists
+    available_watchlists = get_available_watchlists()
 
-    # Manual ticker input
-    manual_tickers = st.sidebar.text_area(
-        "Ou saisir des tickers (un par ligne)",
-        placeholder="AAPL\nMSFT\nGOOGL",
-        height=100,
-        help="✍️ Saisissez manuellement les symboles boursiers à analyser, un par ligne. Cette méthode a priorité sur le fichier."
-    )
+    # Watchlist selector
+    if available_watchlists:
+        watchlist_names = list(available_watchlists.keys())
+
+        # Initialize session state for watchlist if not exists
+        if "selected_watchlist_name" not in st.session_state:
+            st.session_state["selected_watchlist_name"] = watchlist_names[0]
+
+        selected_watchlist_name = st.sidebar.selectbox(
+            "🎯 Choisir une watchlist",
+            options=watchlist_names,
+            index=watchlist_names.index(st.session_state["selected_watchlist_name"])
+                  if st.session_state["selected_watchlist_name"] in watchlist_names else 0,
+            help="🎯 Sélectionnez une watchlist thématique prédéfinie pour analyser un secteur spécifique"
+        )
+
+        # Update session state
+        st.session_state["selected_watchlist_name"] = selected_watchlist_name
+        tickers_file = str(available_watchlists[selected_watchlist_name])
+
+        # Show number of tickers in selected watchlist
+        try:
+            tickers_count = len(load_tickers(Path(tickers_file)))
+            st.sidebar.info(f"📊 {tickers_count} tickers dans cette liste")
+        except:
+            pass
+    else:
+        # Fallback to manual input if no watchlists found
+        tickers_file = st.sidebar.text_input(
+            "Fichier tickers",
+            value=str(settings.tickers_file),
+            help="📄 Chemin vers un fichier contenant la liste des tickers à analyser (un ticker par ligne). Ex: tickers.txt"
+        )
+
+    # Expandable section for manual ticker input
+    with st.sidebar.expander("✍️ Saisie manuelle (optionnel)", expanded=False):
+        manual_tickers = st.text_area(
+            "Tickers personnalisés (un par ligne)",
+            placeholder="AAPL\nMSFT\nGOOGL",
+            height=100,
+            help="✍️ Saisissez manuellement les symboles boursiers à analyser. Cette méthode a priorité sur le fichier.",
+            key="manual_tickers_input"
+        )
 
     # Force refresh option
     force_refresh = st.sidebar.checkbox(
@@ -156,11 +188,15 @@ def render_sidebar():
         # Get tickers
         tickers = []
 
-        if manual_tickers.strip():
-            tickers = [t.strip().upper() for t in manual_tickers.strip().split("\n") if t.strip()]
+        # Check if using manual input
+        manual_input = st.session_state.get("manual_tickers_input", "")
+        if manual_input and manual_input.strip():
+            tickers = [t.strip().upper() for t in manual_input.strip().split("\n") if t.strip()]
+            st.sidebar.info(f"Mode: Saisie manuelle ({len(tickers)} tickers)")
         else:
             try:
                 tickers = load_tickers(Path(tickers_file))
+                st.sidebar.info(f"Mode: {selected_watchlist_name}")
             except FileNotFoundError:
                 st.sidebar.error(f"Fichier non trouvé: {tickers_file}")
                 return
@@ -169,7 +205,7 @@ def render_sidebar():
             st.sidebar.error("Aucun ticker à analyser")
             return
 
-        st.sidebar.success(f"{len(tickers)} tickers à analyser")
+        st.sidebar.success(f"✅ {len(tickers)} tickers à analyser")
 
         # Load and analyze
         with st.spinner("Analyse en cours..."):
@@ -178,6 +214,7 @@ def render_sidebar():
         st.session_state["data"] = data
         st.session_state["analyses"] = analyses
         st.session_state["data_loaded"] = True
+        st.session_state["current_watchlist"] = selected_watchlist_name
         st.rerun()
 
     # Cache info

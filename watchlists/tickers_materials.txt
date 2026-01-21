@@ -1,0 +1,18 @@
+# Matières Premières Critiques - Lithium, Cuivre, Terres Rares
+
+## Lithium
+ALB
+SQM
+LTHM
+LAC
+
+## Cuivre
+FCX
+SCCO
+
+## Minières Diversifiées
+BHP
+RIO
+
+## Terres Rares
+MP
