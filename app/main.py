@@ -13,6 +13,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 import streamlit as st
 import pandas as pd
 from typing import Dict, List
+from loguru import logger
 
 from config.settings import get_settings
 from src.utils.helpers import load_tickers, setup_logging, get_available_watchlists
@@ -242,6 +243,52 @@ def render_sidebar():
     """)
 
 
+def auto_preload_data():
+    """
+    Automatically preload a small watchlist if cache is empty and no data loaded.
+
+    Returns:
+        True if data was preloaded, False otherwise
+    """
+    # Skip if data already loaded
+    if st.session_state.get("data_loaded", False):
+        return False
+
+    # Skip if auto-preload already attempted this session
+    if st.session_state.get("auto_preload_attempted", False):
+        return False
+
+    # Mark that we've attempted auto-preload
+    st.session_state["auto_preload_attempted"] = True
+
+    # Check if cache is empty
+    cache = CacheManager()
+    cache_info = cache.get_cache_info()
+
+    # Only auto-load if cache is completely empty
+    if cache_info['num_tickers'] == 0:
+        # Small list of popular, liquid stocks for initial demo
+        default_tickers = ["AAPL", "MSFT", "GOOGL", "NVDA", "TSLA", "META", "AMZN"]
+
+        st.info("🚀 Premier démarrage détecté ! Chargement d'une liste d'exemple...")
+
+        with st.spinner("Préchargement des données..."):
+            try:
+                data, analyses = load_and_analyze_data(default_tickers)
+                st.session_state["data"] = data
+                st.session_state["analyses"] = analyses
+                st.session_state["data_loaded"] = True
+                st.session_state["current_watchlist"] = "Exemple (Tech Leaders)"
+                st.success(f"✅ {len(data)} actions chargées ! Vous pouvez maintenant charger votre propre liste.")
+                return True
+            except Exception as e:
+                logger.error(f"Auto-preload failed: {e}")
+                st.warning("⚠️ Le préchargement automatique a échoué. Chargez manuellement vos tickers.")
+                return False
+
+    return False
+
+
 def main():
     """Main application entry point - Dashboard page."""
     # Initialize
@@ -250,6 +297,10 @@ def main():
 
     # Render sidebar
     render_sidebar()
+
+    # Auto-preload data on first run if cache is empty
+    if auto_preload_data():
+        st.rerun()
 
     # Main content
     if not st.session_state["data_loaded"]:
