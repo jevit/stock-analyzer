@@ -6,22 +6,27 @@ Application personnelle d'analyse technique boursière. Détecte des setups tech
 
 ## Fonctionnalités
 
-- **Import watchlist** depuis un fichier texte
+- **Préchargement automatique** 🆕 : Liste d'exemple au premier démarrage si cache vide
+- **Import watchlist** depuis un fichier texte ou watchlists prédéfinies (15+ secteurs)
 - **Téléchargement automatique** des données via yfinance (gratuit)
 - **Calcul d'indicateurs techniques**:
   - SMA 20, 50, 200
   - RSI (14)
   - ATR (14) et ATR%
   - Bollinger Bands (20, 2)
+  - MACD (12, 26, 9)
   - Volume moyen 20 jours
-- **Détection de 3 stratégies**:
+- **Détection de 6 stratégies**:
   - **Trend Pullback**: Repli vers SMA50 en tendance haussière
   - **Breakout**: Cassure des plus hauts 55 jours avec volume
   - **Mean Reversion**: Rebond depuis survente (BB + RSI)
+  - **MACD Crossover**: Croisement MACD/Signal 🆕
+  - **Golden Cross**: Croisement SMA50/SMA200 🆕
+  - **Volume Breakout**: Cassure avec explosion de volume 🆕
 - **Scoring** 0-100 avec bonus pour signaux multiples
 - **Interface Streamlit** avec dashboard et vue détaillée
 - **Export CSV** des résultats
-- **Alertes Telegram** optionnelles
+- **Alertes Telegram & Email** optionnelles
 - **Cache local** pour éviter les retéléchargements
 
 ## Installation
