@@ -3,7 +3,7 @@ Table components for displaying analysis results.
 """
 import pandas as pd
 import streamlit as st
-from typing import List
+from typing import List, Any
 
 from src.scoring.scorer import TickerAnalysis
 from app.utils.tooltips import TOOLTIPS
@@ -214,7 +214,7 @@ def create_novice_table(analyses: List[TickerAnalysis], sort_by_verdict: bool = 
     return df
 
 
-def style_opportunities_table(df: pd.DataFrame) -> pd.io.formats.style.Styler:
+def style_opportunities_table(df: pd.DataFrame) -> Any:
     """
     Apply styling to the opportunities table.
 
@@ -222,7 +222,7 @@ def style_opportunities_table(df: pd.DataFrame) -> pd.io.formats.style.Styler:
         df: DataFrame to style
 
     Returns:
-        Styled DataFrame
+        Styled DataFrame (pandas Styler object)
     """
     def color_score(val):
         """Color code based on score value."""
